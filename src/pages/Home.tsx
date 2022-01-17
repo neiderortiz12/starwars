@@ -31,7 +31,7 @@ const Home = () => {
             {
                 data.allPeople.people.map((person: any) => (
                     <li key={person.id}>
-                        <Link to={"/persons/" + person.id}>
+                        <Link to={"/starwars/persons/" + person.id}>
                             <h3 >{person.name}</h3>
                         </Link>
                     </li>

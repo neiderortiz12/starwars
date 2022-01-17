@@ -6,10 +6,10 @@ const AppRouter = () => {
     return (
         <BrowserRouter>
              <Routes>
-                 <Route path='/persons' element={<Home/>}>
+                 <Route path='/starwars/persons' element={<Home/>}>
                     <Route path=':id' element={<Person/>}/>
                  </Route>
-                 <Route path='*' element={<Navigate replace to="/persons"/>}/>
+                 <Route path='*' element={<Navigate replace to="/starwars/persons"/>}/>
              </Routes>
         </BrowserRouter>
         

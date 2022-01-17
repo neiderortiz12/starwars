@@ -46,7 +46,7 @@ const Person = () => {
     const { data, error, loading } = useQuery(PERSON, { variables: { personid: params.id } })
     if (error) {
         return(
-            <Navigate to="/persons"/>
+            <Navigate to="/starwars/persons"/>
         )
     }
     if (loading) {
@@ -58,7 +58,7 @@ const Person = () => {
     return (
         <div className='person'>
             <div className='close'>
-                <Link to="/persons">
+                <Link to="/starwars/persons">
                     <CloseIcon />
                 </Link>
             </div>
