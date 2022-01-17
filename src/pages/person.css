@@ -1,0 +1,22 @@
+.person{
+    position: fixed;
+    max-height: 90vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    overflow-Y: auto;
+    overflow-x: scroll;
+    flex-direction: column;
+    background-color: rgb(189, 189, 189);
+}
+.person .card {
+    width: 400px;
+    padding: 5px;
+}
+.person .close {
+    margin: 5px;
+    background-color: rgb(189, 189, 189);
+    position: sticky;
+    top:0
+}
